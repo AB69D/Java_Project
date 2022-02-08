@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".OthersFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:background="@drawable/gradient_color">
+
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="176dp"
+                android:layout_marginLeft="176dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginEnd="177dp"
+                android:layout_marginRight="177dp"
+                android:text="AlphaXAirlines"
+                android:textSize="23dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="176dp"
+                android:layout_marginLeft="176dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="177dp"
+                android:layout_marginRight="177dp"
+                android:text="Enjoy your journey with us"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewName" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Account"
+                android:textSize="16dp"
+                android:layout_marginTop="165dp"
+                />
+            <androidx.gridlayout.widget.GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="185dp"
+                app:rowCount="2"
+                app:columnCount="2"
+                >
+
+                <LinearLayout
+                    android:id="@+id/myProfileBtn"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    app:layout_rowWeight="1"
+                    app:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    app:layout_gravity="fill"
+                    android:background="#CFCFCF"
+                    android:padding="15dp"
+                    android:layout_margin="8dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_baseline_account_circle_24"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="My Profile"
+                        android:textSize="17dp"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/travellersBtn"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    app:layout_rowWeight="1"
+                    app:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    app:layout_gravity="fill"
+                    android:background="#CFCFCF"
+                    android:padding="15dp"
+                    android:layout_margin="8dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_baseline_group_add_24"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="     Travellers     "
+                        android:textSize="17dp"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/changePasswordBtn"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    app:layout_rowWeight="1"
+                    app:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    app:layout_gravity="fill"
+                    android:background="#CFCFCF"
+                    android:padding="15dp"
+                    android:layout_margin="8dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_baseline_settings_24"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Change Password"
+                        android:textSize="17dp"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+
+
+            </androidx.gridlayout.widget.GridLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Help and Legal"
+                android:textSize="16dp"
+                android:layout_marginTop="400dp"
+                />
+            <androidx.gridlayout.widget.GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="420dp"
+                app:rowCount="3"
+                app:columnCount="2"
+                >
+
+                <LinearLayout
+                    android:id="@+id/contactUsBtn"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    app:layout_rowWeight="1"
+                    app:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    app:layout_gravity="fill"
+                    android:background="#CFCFCF"
+                    android:padding="15dp"
+                    android:layout_margin="8dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_baseline_headset_mic_24"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Contact Us"
+                        android:textSize="17dp"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/termsConditionBtn"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    app:layout_rowWeight="1"
+                    app:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    app:layout_gravity="fill"
+                    android:background="#CFCFCF"
+                    android:padding="8dp"
+                    android:layout_margin="8dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_baseline_assignment_24"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Terms and Condition"
+                        android:textSize="17dp"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/PrivacyPolicyBtn"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    app:layout_rowWeight="1"
+                    app:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    app:layout_gravity="fill"
+                    android:background="#CFCFCF"
+                    android:padding="15dp"
+                    android:layout_margin="8dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_baseline_verified_user_24"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Privacy Policy"
+                        android:textSize="17dp"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/BaggageBtn"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    app:layout_rowWeight="1"
+                    app:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    app:layout_gravity="fill"
+                    android:background="#CFCFCF"
+                    android:padding="15dp"
+                    android:layout_margin="8dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_baseline_business_center_24"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Baggage Policy"
+                        android:textSize="17dp"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/CancelReturnBtn"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    app:layout_rowWeight="1"
+                    app:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    app:layout_gravity="fill"
+                    android:background="#CFCFCF"
+                    android:padding="15dp"
+                    android:layout_margin="8dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_baseline_monetization_on_24"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cancel and Return"
+                        android:textSize="17dp"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+
+
+            </androidx.gridlayout.widget.GridLayout>
+
+            <Button
+
+                android:id="@+id/LogoutBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="800dp"
+                android:layout_marginBottom="40dp"
+                android:background="@color/LightRed"
+                android:text="Log Out"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+
+                />
+        </RelativeLayout>
+
+    </FrameLayout>
+    </ScrollView>

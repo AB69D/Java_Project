@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/home_menu"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Home"
+        />
+    <item android:id="@+id/search_menu"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="Book Flight" />
+
+    <item android:id="@+id/myTrip_menu"
+        android:icon="@drawable/ic_baseline_person_search_24"
+        android:title="My Trip"/>
+
+    <item android:id="@+id/flightStatus_menu"
+        android:icon="@drawable/ic_baseline_access_time_24"
+        android:title="Flight Status"/>
+
+    <item android:id="@+id/More_menu"
+        android:icon="@drawable/ic_baseline_subject_24"
+        android:title="More"/>
+</menu>

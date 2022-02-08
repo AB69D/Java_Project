@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FromCity"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        android:elevation="5dp"
+        app:cardUseCompatPadding="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="4dp"
+                android:src="@drawable/ic_baseline_schedule_24"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dhaka"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:id="@+id/CityNameTextView"
+                android:layout_toRightOf="@+id/img1"
+                />
+
+            <TextView
+                android:id="@+id/AirportName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hazrat Shahjalal International Airport"
+                android:textColor="@color/black"
+                android:layout_below="@+id/CityNameTextView"
+                android:layout_toRightOf="@+id/img1"
+                android:layout_marginTop="4dp"
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/card1"
+        android:id="@+id/FromOneWayRecycleView"/>
+</RelativeLayout>

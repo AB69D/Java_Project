@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "293474610701",
+    "project_id": "airline-reservation-syst-8b409",
+    "storage_bucket": "airline-reservation-syst-8b409.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:293474610701:android:7a20bc8126002a347faf44",
+        "android_client_info": {
+          "package_name": "com.example.airline_reservation_system"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "293474610701-vd66729muri32ppdcto3d79us8sp9u7q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZ7uWceNdeidJ9-5A6XdTzWJtH6wvBHkM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "293474610701-vd66729muri32ppdcto3d79us8sp9u7q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

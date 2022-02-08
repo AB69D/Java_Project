@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RoundTripFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="30dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+        <!--        Select city-->
+        <GridLayout
+            android:id="@+id/RoundTripFirstGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rowCount="1"
+            android:columnCount="3"
+            android:background="@color/black"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:layout_marginBottom="30dp"
+            >
+            <!--            Row1 from btn-->
+            <LinearLayout
+                android:id="@+id/RoundTripFromBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FROM"
+                    android:background="@color/Transparent"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:padding="0dp"
+                    />
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="From Airport"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <!--            Row2 icon-->
+            <ImageView
+                android:src="@drawable/ic_outline_swap_horizontal_circle_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/Transparent"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+
+                />
+
+            <!--            Row3 To airport-->
+
+            <LinearLayout
+                android:id="@+id/RoundTripToBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:gravity="end"
+                tools:ignore="UnusedAttribute">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TO"
+                    android:background="@color/Transparent"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:padding="0dp"
+                    />
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="To Airport"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+        </GridLayout>
+        <!--select date-->
+        <GridLayout
+            android:id="@+id/RoundTripSecondGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rowCount="1"
+            android:columnCount="2"
+            android:layout_marginTop="100dp"
+
+            >
+<!--            for departure-->
+            <LinearLayout
+                android:id="@+id/RoundTripDeparture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:padding="5dp"
+                android:background="@color/black"
+                >
+                <ImageView
+
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_baseline_today_24"
+
+
+                    />
+
+                <View
+
+                    android:layout_width="2dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/Light_gray"
+                    />
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/Transparent"
+                    android:text="Departure"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+
+                    />
+
+
+            </LinearLayout>
+<!--           for return-->
+            <LinearLayout
+                android:id="@+id/RoundTripReturn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:padding="5dp"
+                android:background="@color/black"
+                >
+                <ImageView
+
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_baseline_today_24"
+
+
+                    />
+
+                <View
+
+                    android:layout_width="2dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/Light_gray"
+                    />
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/Transparent"
+                    android:text="Return"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+
+                    />
+
+
+            </LinearLayout>
+        </GridLayout>
+        <!--        select Cabin-->
+        <GridLayout
+            android:id="@+id/roundTripCabin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rowCount="1"
+            android:columnCount="3"
+            android:padding="5dp"
+            android:background="@color/black"
+            android:layout_marginTop="210dp"
+
+            >
+
+            <ImageView
+
+                android:src="@drawable/ic_baseline_group_24"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="20dp"
+                />
+
+            <View
+
+                android:layout_width="2dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/Light_gray"
+                />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/Transparent"
+                android:text="Any Cabin"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                />
+
+        </GridLayout>
+
+        <Button
+            android:id="@+id/roundTripSearchBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="310dp"
+            android:background="@color/LightRed"
+            android:text="Search"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+
+            />
+
+    </RelativeLayout>
+
+</FrameLayout>
